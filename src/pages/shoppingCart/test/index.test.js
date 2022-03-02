@@ -11,10 +11,9 @@ describe('Shopping Cart', () => {
     });
 
     test('should show products table', () =>{
-        //given
-        //when
         const { container } = render(<ShoppingCart />);
         const thElems = container.getElementsByTagName('th');
+
         expect(thElems.length).toBe(3);
 
         expect(thElems.item(0)).toHaveTextContent('商品名称');
