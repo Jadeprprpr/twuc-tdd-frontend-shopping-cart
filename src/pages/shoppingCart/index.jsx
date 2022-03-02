@@ -7,6 +7,13 @@ class ShoppingCart extends React.Component {
         return (
             <div  className="wrapper">
                 <div className="title">Shopping Cart</div>
+                <table>
+                    <tr>
+                        <th>商品名称</th>
+                        <th>数量</th>
+                        <th>单价</th>
+                    </tr>
+                </table>
             </div>
         );
     }
