@@ -18,8 +18,10 @@ describe('Shopping Cart', () => {
         expect(thElems.length).toBe(3);
 
         expect(thElems.item(0)).toHaveTextContent('商品名称');
-        expect(thElems.item(1)).toHaveTextContent('数量');
-        expect(thElems.item(2)).toHaveTextContent('单价');
-
+        expect(thElems.item(1)).toHaveTextContent('单价');
+        expect(thElems.item(2)).toHaveTextContent('数量');
+        ['商品名称', '单价', '数量'].forEach((value, index) => {
+            expect(thElems.item(index)).toHaveTextContent(value);
+        });
     });
 });
